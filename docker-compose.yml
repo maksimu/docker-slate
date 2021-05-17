@@ -1,0 +1,8 @@
+docs:
+  image: elchbenny/docker-slate    
+  ports:
+    - 4002:4567
+  volumes:
+    # Create one folder above current folder where docker-compose.yml file called `commander-docs` and add file `index.html.md`
+    - ../commander-docs/index.html.md:/slate/slate-2.0.0/source/index.html.md
+
